@@ -2,10 +2,23 @@ import { useState } from "react";
 
 const SignUpForm = () => {
     const [username, setUsername] = useState("")
-    const [passwork, setPassword] = useState("")
+    const [password, setPassword] = useState("")
     const [error, setError] = useState(null)
-    
-    return <h2>Sign Up!</h2>
-}
+
+    return (
+        <>
+        <h2>Sign Up!</h2>
+        <form>
+            <label> 
+                Username:<input/>
+            </label>
+            <label>
+                Password:<input/>
+            </label>
+            <button>Submit</button>
+        </form>
+        </>
+    )
+    }
 
 export default SignUpForm;
