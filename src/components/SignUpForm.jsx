@@ -30,7 +30,7 @@ const SignUpForm = ({setToken}) => {
         <>
         <h2>Sign Up!</h2>
         {error && <p>{error}</p>}
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={(handleSubmit)}>
             <label> 
                 Username:<input value={username} onChange={(e) => setUsername(e.target.value)}/>
             </label>
